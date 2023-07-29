@@ -1,8 +1,8 @@
-# Block Theme Starter
+# Andrée Makes Block Theme
 
 ## What is this?
 
-This is a barebones WordPress block theme starter. Use it to build your next block theme!
+This is the block theme for [andreemakes.com](https://andreemakes.com). This theme was created using the [Block Theme Starter](https://github.com/itsamoreh/block-theme-starter).
 
 ## Local Environment
 

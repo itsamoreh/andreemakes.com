@@ -1,4 +1,4 @@
-# BTS Developer Docs
+# Andrée Makes Theme Developer Docs
 
 ## Contents
 

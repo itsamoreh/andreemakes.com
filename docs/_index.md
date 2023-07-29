@@ -1,8 +1,8 @@
-# BTS Help
+# Andrée Makes Theme Help
 
-## [Editor Help](/wp-admin/admin.php?page=bts-docs-editors)
+## [Editor Help](/wp-admin/admin.php?page=am-docs-editors)
 
-## [Developer Docs](/wp-admin/admin.php?page=bts-docs-developers) (Admins only)
+## [Developer Docs](/wp-admin/admin.php?page=am-docs-developers) (Admins only)
 
 ---
 

@@ -2,7 +2,7 @@
 /**
  * This file adds functions to the WordPress theme.
  *
- * @package bts
+ * @package am
  * @author  Amor Kumar
  * @license GNU General Public License v2 or later
  * @link    https://itsamoreh.dev
@@ -21,7 +21,7 @@ if ( ! function_exists( 'setup' ) ) {
 	function setup() {
 
 		// Make theme available for translation.
-		load_theme_textdomain( 'bts', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'am', get_template_directory() . '/languages' );
 
 		// Enqueue editor styles.
 		add_editor_style( '/style.css' );
@@ -45,10 +45,10 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\\setup' );
 function enqueue_style_sheet() {
 
 	wp_enqueue_style(
-		'bts',
+		'am',
 		get_template_directory_uri() . '/style.css',
 		array(),
-		wp_get_theme( 'bts' )->get( 'Version' )
+		wp_get_theme( 'am' )->get( 'Version' )
 	);
 
 }
@@ -58,7 +58,13 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_style_sheet' );
  * Add meta tags.
  */
 function add_meta_tags() {
-	echo '<meta name="description" content="Block Theme Starter.">';
+	$meta_description = '
+		Welcome to Andrée Schuller\'s baking paradise! Immerse yourself in a
+		world of cupcakes, cakes, and confectionary wonders. Explore recipes,
+		get inspired, and place custom orders for your sweetest moments.
+	';
+
+	echo '<meta name="description" content="' . esc_attr( $meta_description ) . '">';
   }
 add_action('wp_head', __NAMESPACE__ . '\\add_meta_tags');
 
@@ -79,31 +85,31 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_script' );
 function register_block_pattern_categories() {
 	register_block_pattern_category(
 		'heros',
-		array( 'label' => __( 'Heros', 'bts' ) )
+		array( 'label' => __( 'Heros', 'am' ) )
 	);
 	register_block_pattern_category(
 		'quotes',
-		array( 'label' => __( 'Quotes', 'bts' ) )
+		array( 'label' => __( 'Quotes', 'am' ) )
 	);
 	register_block_pattern_category(
 		'ctas',
-		array( 'label' => __( 'CTAs', 'bts' ) )
+		array( 'label' => __( 'CTAs', 'am' ) )
 	);
 	register_block_pattern_category(
 		'combo',
-		array( 'label' => __( 'Combination', 'bts' ) )
+		array( 'label' => __( 'Combination', 'am' ) )
 	);
 	register_block_pattern_category(
 		'cards',
-		array( 'label' => __( 'Cards', 'bts' ) )
+		array( 'label' => __( 'Cards', 'am' ) )
 	);
 	register_block_pattern_category(
 		'pages',
-		array( 'label' => __( 'Pages', 'bts' ) )
+		array( 'label' => __( 'Pages', 'am' ) )
 	);
 	register_block_pattern_category(
 		'other',
-		array( 'label' => __( 'Other', 'bts' ) )
+		array( 'label' => __( 'Other', 'am' ) )
 	);
 }
 add_action( 'init', __NAMESPACE__ . '\\register_block_pattern_categories' );

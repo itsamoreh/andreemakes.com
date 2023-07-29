@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer
- * Slug: bts/footer
+ * Slug: am/footer
  * Description: Footer with site logo and menus.
  * Categories: footer
  * Block Types: core/template-part/footer
