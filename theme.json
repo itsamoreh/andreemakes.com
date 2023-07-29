@@ -24,14 +24,29 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#000",
-					"name": "Black",
-					"slug": "black"
+					"color": "#FFC8DD",
+					"name": "Pink",
+					"slug": "pink"
 				},
 				{
-					"color": "#FFF",
+					"color": "#BDE0FE",
+					"name": "Blue",
+					"slug": "blue"
+				},
+				{
+					"color": "#FAFDFF",
 					"name": "White",
 					"slug": "white"
+				},
+				{
+					"color": "#495159",
+					"name": "Charcoal",
+					"slug": "charcoal"
+				},
+				{
+					"color": "#1C1F22",
+					"name": "Black",
+					"slug": "black"
 				},
 				{
 					"color": "transparent",
@@ -42,7 +57,7 @@
 			"gradients": [
 				{
 					"slug": "black-to-white",
-					"gradient": "linear-gradient(90deg, #000 0%, #FFF 100%)",
+					"gradient": "linear-gradient(90deg, #1C1F22 0%, #FAFDFF 100%)",
 					"name": "Black to White"
 				}
 			]
