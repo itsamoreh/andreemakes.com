@@ -187,7 +187,7 @@
 			"fontSizes": [
 				{
 					"name": "Body",
-					"size": "1rem",
+					"size": "1.25rem",
 					"slug": "body"
 				},
 				{
@@ -218,7 +218,6 @@
 				{
 					"name": "H1",
 					"size": "3.052rem",
-					"fluid": false,
 					"slug": "h1"
 				}
 			]
