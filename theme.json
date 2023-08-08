@@ -192,12 +192,12 @@
 				},
 				{
 					"name": "H6",
-					"size": "0.953rem",
+					"size": "0.8rem",
 					"slug": "h6"
 				},
 				{
 					"name": "H5",
-					"size": "1.953rem",
+					"size": "1.25rem",
 					"slug": "h5"
 				},
 				{
@@ -479,8 +479,11 @@
 						"bottom": "0px"
 					}
 				},
+				"color": {
+					"text": "var(--wp--preset--color--charcoal)"
+				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--body)"
+					"fontSize": "var(--wp--preset--font-size--h-6)"
 				}
 			},
 			"cite": {
