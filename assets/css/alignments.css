@@ -1,16 +1,43 @@
-@media (min-width: 1000px) {
-	body {
-		.is-layout-constrained {
+body {
+	.is-layout-constrained {
+		> .alignleft {
+			margin: var(--wp--custom--spacing--gap);
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+		> .alignright {
+			margin: var(--wp--custom--spacing--gap);
+			margin-right: 0;
+			padding-right: 0;
+		}
+
+		/*
+			Center floated images on small screens.
+		*/
+		@media (max-width: 480px) {
 			> .alignleft {
-				margin: var(--wp--custom--spacing--gap);
-				margin-left: calc((100% - var(--wp--style--global--content-size)) / 2);
-				padding-left: 0;
+				float: none;
+				margin: var(--wp--custom--spacing--gap) auto;
 			}
 
 			> .alignright {
-				margin: var(--wp--custom--spacing--gap);
+				float: none;
+				margin: var(--wp--custom--spacing--gap) auto;
+			}
+		}
+
+		/*
+			Prevent floated images from going outside of the contentSize area.
+			calc( var(--wp--style--global--content-size) + var(--wp--custom--spacing--gap) * 2 )
+		*/
+		@media (min-width: calc(1000px + 24px * 2)) {
+			> .alignleft {
+				margin-left: calc((100% - var(--wp--style--global--content-size)) / 2);
+			}
+
+			> .alignright {
 				margin-right: calc((100% - var(--wp--style--global--content-size)) / 2);
-				padding-right: 0;
 			}
 		}
 	}
