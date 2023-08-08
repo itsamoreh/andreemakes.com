@@ -1,0 +1,17 @@
+@media (min-width: 1000px) {
+	body {
+		.is-layout-constrained {
+			> .alignleft {
+				margin: var(--wp--custom--spacing--gap);
+				margin-left: calc((100% - var(--wp--style--global--content-size)) / 2);
+				padding-left: 0;
+			}
+
+			> .alignright {
+				margin: var(--wp--custom--spacing--gap);
+				margin-right: calc((100% - var(--wp--style--global--content-size)) / 2);
+				padding-right: 0;
+			}
+		}
+	}
+}

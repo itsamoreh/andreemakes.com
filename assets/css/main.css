@@ -6,6 +6,7 @@
  */
 
 @import "./global.css";
+@import "./alignments.css";
 
 @import-glob "./blocks/**/!(blocks).css";
 @import-glob "./patterns/**/!(patterns).css";
