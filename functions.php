@@ -69,17 +69,6 @@ function add_meta_tags() {
 add_action('wp_head', __NAMESPACE__ . '\\add_meta_tags');
 
 /**
- * Enqueue theme scripts.
- */
-function enqueue_script() {
-
-	wp_enqueue_script( 'alpinejs', 'https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js', array(), null, false );
-    wp_script_add_data( 'alpinejs', 'defer', true );
-
-}
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_script' );
-
-/**
  * Register block pattern categories.
  */
 function register_block_pattern_categories() {

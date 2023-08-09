@@ -20,4 +20,20 @@ Alpine.js is included in the theme and is recommended for dynamic block
 JavaScript functionality. Write your Alpine directives in the dynamic block's
 render callback.
 
+NOTE: Alpine was removed, because no custom blocks were being used. To add it
+back, add the following to `functions.php`:
+
+```php
+/**
+ * Enqueue theme scripts.
+ */
+function enqueue_script() {
+
+	wp_enqueue_script( 'alpinejs', 'https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js', array(), null, false );
+    wp_script_add_data( 'alpinejs', 'defer', true );
+
+}
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_script' );
+```
+
 See https://alpinejs.dev/start-here for more on Alpine.js.
