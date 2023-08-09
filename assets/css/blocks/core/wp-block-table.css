@@ -28,6 +28,7 @@
 
 .wp-block-table th {
 	font-weight: var(--wp--custom--font-weight--regular);
+	font-size: var(--wp--preset--font-size--h-6);
 }
 
 .wp-block-table td,
