@@ -46,9 +46,12 @@
 	}
 
 	.wp-block-navigation__responsive-container-content {
-		font-size: var(--wp--preset--font-size--h-2);
-		line-height: var(--wp--custom--line-height--130);
 		padding-top: 80px;
+
+		.wp-block-navigation {
+			font-size: var(--wp--preset--font-size--h-2);
+			line-height: var(--wp--custom--line-height--130);
+		}
 	}
 }
 
