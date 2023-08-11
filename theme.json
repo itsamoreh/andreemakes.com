@@ -64,10 +64,7 @@
 		},
 		"custom": {
 			"fontWeight": {
-				"light": 300,
 				"regular": 400,
-				"medium": 500,
-				"semi-bold": 600,
 				"bold": 700
 			},
 			"lineHeight": {
@@ -81,7 +78,7 @@
 			}
 		},
 		"layout": {
-			"contentSize": "1000px",
+			"contentSize": "800px",
 			"wideSize": "1920px"
 		},
 		"shadow": {
@@ -149,32 +146,32 @@
 			"textDecoration": false,
 			"fontFamilies": [
 				{
-					"fontFamily": "Josefin Sans, sans-serif",
-					"name": "Josefin Sans",
-					"slug": "sans",
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Josefin Sans",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "300 700",
-							"src": ["file:./assets/fonts/Josefin_Sans.woff2"]
-						}
-					]
-				},
-				{
-					"fontFamily": "Josefin Slab, sans-serif",
-					"name": "Josefin Slab",
+					"fontFamily": "Bariol Serif, serif",
+					"name": "Bariol Serif",
 					"slug": "serif",
 					"fontFace": [
 						{
 							"fontDisplay": "block",
-							"fontFamily": "Josefin Slab",
+							"fontFamily": "Bariol Serif",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
-							"fontWeight": "300 700",
-							"src": ["file:./assets/fonts/Josefin_Slab.woff2"]
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/bariol_serif_regular-webfont.woff2"]
+						}
+					]
+				},
+				{
+					"fontFamily": "Bariol Serif, serif",
+					"name": "Bariol Serif Bold",
+					"slug": "serif-bold",
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Bariol Serif",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": ["file:./assets/fonts/bariol_serif_bold-webfont.woff2"]
 						}
 					]
 				},
@@ -219,6 +216,11 @@
 					"name": "H1",
 					"size": "3.052rem",
 					"slug": "h1"
+				},
+				{
+					"name": "Display",
+					"size": "4.768rem",
+					"slug": "display"
 				}
 			]
 		},
@@ -232,8 +234,8 @@
 					"text": "var(--wp--preset--color--white)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--sans)",
-					"fontWeight": "500",
+					"fontFamily": "var(--wp--preset--font-family--serif)",
+					"fontWeight": "700",
 					"fontSize": "16px"
 				},
 				"border": {
@@ -468,7 +470,7 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body)",
-					"fontWeight": "var(--wp--custom--font-weight--regular)"
+					"fontWeight": "var(--wp--custom--font-weight--bold)"
 				}
 			},
 			"caption": {
@@ -544,7 +546,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--sans)",
+			"fontFamily": "var(--wp--preset--font-family--serif)",
 			"fontSize": "var(--wp--preset--font-size--body)",
 			"fontWeight": "var(--wp--custom--font-weight--regular)",
 			"lineHeight": "var(--wp--custom--line-height--130)"
