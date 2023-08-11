@@ -61,6 +61,13 @@
 	/* Navigation Link
 	  --------------------------------------------- */
 
+	.wp-block-navigation-item {
+		transition: transform 0.1s ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
 	.wp-block-navigation-item.is-style-outline a {
 		border: 1px solid currentColor;
 		border-radius: 4px;
