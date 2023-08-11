@@ -2,7 +2,30 @@
 --------------------------------------------- */
 
 .wp-block-navigation__responsive-container.is-menu-open {
-	padding: 40px var(--wp--custom--spacing--gap);
+	&.is-menu-open {
+		padding: 40px var(--wp--custom--spacing--gap);
+
+		.wp-block-navigation__responsive-dialog {
+			&:before {
+				position: absolute;
+				top: -8px;
+				content: "";
+				background: url("./assets/images/logo.png");
+				background-size: contain;
+				width: 214px;
+				height: 43px;
+			}
+		}
+
+		.wp-block-navigation__responsive-container-content {
+			padding-top: 80px;
+
+			.wp-block-navigation {
+				font-size: var(--wp--preset--font-size--h-2);
+				line-height: var(--wp--custom--line-height--130);
+			}
+		}
+	}
 }
 
 .wp-block-navigation__responsive-container-close,
@@ -10,7 +33,7 @@
 	padding: 2px;
 }
 
-/* Navigation Submenu
+/* Navigation Submenus
   --------------------------------------------- */
 
 .wp-block-navigation:not(.has-background)
@@ -31,27 +54,6 @@
 		padding-left: 8px !important;
 		padding-right: 8px !important;
 		padding-top: 4px !important;
-	}
-
-	.wp-block-navigation__responsive-dialog {
-		&:before {
-			position: absolute;
-			top: -8px;
-			content: "";
-			background: url("./assets/images/logo.png");
-			background-size: contain;
-			width: 214px;
-			height: 43px;
-		}
-	}
-
-	.wp-block-navigation__responsive-container-content {
-		padding-top: 80px;
-
-		.wp-block-navigation {
-			font-size: var(--wp--preset--font-size--h-2);
-			line-height: var(--wp--custom--line-height--130);
-		}
 	}
 }
 
