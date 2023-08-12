@@ -57,7 +57,7 @@
 	}
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
 	/* Navigation Link
 	  --------------------------------------------- */
 
@@ -95,8 +95,8 @@
 	}
 }
 
-/* Apply the core style at 1280px again */
-@media (min-width: 1280px) {
+/* Mobile navigation drawer breakpoint */
+@media (min-width: 600px) {
 	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(
 			.is-menu-open
 		) {
