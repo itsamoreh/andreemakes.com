@@ -55,47 +55,9 @@ function enqueue_style_sheet() {
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_style_sheet' );
 
 /**
- * Add meta tags.
- */
-function add_meta_tags() {
-	$meta_description = '
-		Welcome to Andrée Schuller\'s baking paradise! Immerse yourself in a
-		world of cupcakes, cakes, and confectionary wonders. Explore recipes,
-		get inspired, and place custom orders for your sweetest moments.
-	';
-
-	echo '<meta name="description" content="' . esc_attr( $meta_description ) . '">';
-  }
-add_action('wp_head', __NAMESPACE__ . '\\add_meta_tags');
-
-/**
  * Register block pattern categories.
  */
 function register_block_pattern_categories() {
-	register_block_pattern_category(
-		'heros',
-		array( 'label' => __( 'Heros', 'am' ) )
-	);
-	register_block_pattern_category(
-		'quotes',
-		array( 'label' => __( 'Quotes', 'am' ) )
-	);
-	register_block_pattern_category(
-		'ctas',
-		array( 'label' => __( 'CTAs', 'am' ) )
-	);
-	register_block_pattern_category(
-		'combo',
-		array( 'label' => __( 'Combination', 'am' ) )
-	);
-	register_block_pattern_category(
-		'cards',
-		array( 'label' => __( 'Cards', 'am' ) )
-	);
-	register_block_pattern_category(
-		'pages',
-		array( 'label' => __( 'Pages', 'am' ) )
-	);
 	register_block_pattern_category(
 		'other',
 		array( 'label' => __( 'Other', 'am' ) )
