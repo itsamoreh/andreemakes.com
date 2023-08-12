@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This is the block theme for [andreemakes.com](https://andreemakes.com). This theme was created using the [Block Theme Starter](https://github.com/itsamoreh/block-theme-starter).
+This is the block theme for [andreemakes.com](https://andreemakes.com). This theme was created using [itsamoreh/block-theme-starter](https://github.com/itsamoreh/block-theme-starter).
 
 ## Local Environment
 
