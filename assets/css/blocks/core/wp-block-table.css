@@ -1,24 +1,30 @@
 /* Table
 --------------------------------------------- */
 
-.wp-block-table.is-style-stripes {
-	border-bottom: none;
-}
+.wp-block-table {
+	&.is-style-stripes {
+		border-bottom: none;
 
-.wp-block-table table {
-	border-collapse: collapse;
-}
+		tbody tr:nth-child(odd) {
+			background-color: var(--wp--preset--color--blue);
+		}
+	}
 
-.wp-block-table th {
-	font-weight: var(--wp--custom--font-weight--bold);
-	font-size: var(--wp--preset--font-size--h-6);
-}
+	table {
+		border-collapse: collapse;
+	}
 
-.wp-block-table td,
-.wp-block-table th {
-	padding: 4px;
-}
+	td,
+	th {
+		padding: var(--wp--preset--spacing--xx-small) 0;
+	}
 
-.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-	background-color: var(--wp--preset--color--blue);
+	th {
+		font-weight: var(--wp--custom--font-weight--bold);
+		font-size: var(--wp--preset--font-size--caption);
+	}
+
+	figcaption {
+		font-size: var(--wp--preset--font-size--caption);
+	}
 }

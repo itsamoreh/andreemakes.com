@@ -2,17 +2,18 @@
 --------------------------------------------- */
 
 .wp-block-post-comments-form .comment-reply-title {
-	margin-bottom: var(--wp--custom--spacing--gap);
+	margin-bottom: var(--wp--preset--spacing--small);
 }
 
 .wp-block-post-comments-form input:not([type="submit"]):not([type="checkbox"]),
 .wp-block-post-comments-form textarea {
 	border-color: var(--wp--preset--color--black);
-	padding: 8px 16px;
+	padding: var(--wp--preset--spacing--xx-small)
+		var(--wp--preset--spacing--x-small);
 }
 
 .wp-block-post-comments-form p:not(.form-submit) {
-	margin-bottom: 24px;
+	margin-bottom: var(--wp--preset--spacing--small);
 }
 
 .wp-block-post-comments-form .comment-form-cookies-consent label {
