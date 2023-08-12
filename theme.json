@@ -188,43 +188,66 @@
 				{
 					"name": "Caption",
 					"size": "1rem",
-					"slug": "caption"
+					"slug": "caption",
+					"fluid": {
+						"min": "0.8rem"
+					}
 				},
 				{
 					"name": "Body",
 					"size": "1.25rem",
 					"slug": "body",
-					"fluid": false
+					"fluid": {
+						"min": "1rem"
+					}
 				},
 				{
 					"name": "H5",
 					"size": "1.563rem",
-					"slug": "h5"
+					"slug": "h5",
+					"fluid": {
+						"min": "1.25rem"
+					}
 				},
 				{
 					"name": "H4",
 					"size": "1.953rem",
-					"slug": "h4"
+					"slug": "h4",
+					"fluid": {
+						"min": "1.563rem"
+					}
 				},
 				{
 					"name": "H3",
 					"size": "2.441rem",
-					"slug": "h3"
+					"slug": "h3",
+					"fluid": {
+						"min": "1.953rem"
+					}
 				},
 				{
 					"name": "H2",
 					"size": "3.052rem",
-					"slug": "h2"
+					"slug": "h2",
+					"fluid": {
+						"min": "2.441rem"
+					}
 				},
 				{
 					"name": "H1",
 					"size": "3.815rem",
-					"slug": "h1"
+					"slug": "h1",
+					"fluid": {
+						"min": "3.052rem"
+					}
 				},
 				{
 					"name": "Display",
 					"size": "4.768rem",
-					"slug": "display"
+					"slug": "display",
+					"fluid": {
+						"min": "3.052rem"
+					}
 				}
 			]
 		},
