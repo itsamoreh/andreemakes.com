@@ -31,7 +31,7 @@ body {
 			Prevent floated images from going outside of the contentSize area.
 			calc( var(--wp--style--global--content-size) + var(--wp--custom--spacing--gap) * 2 )
 		*/
-		@media (min-width: calc(1000px + 24px * 2)) {
+		@media (min-width: calc(750px + 24px * 2)) {
 			> .alignleft {
 				margin-left: calc((100% - var(--wp--style--global--content-size)) / 2);
 			}
