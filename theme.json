@@ -527,6 +527,9 @@
 					"fontSize": "var(--wp--preset--font-size--h-2)"
 				}
 			},
+			"core/site-logo": {
+				"css": "transition: transform 0.1s ease; &:hover { transform: scale(1.05); }"
+			},
 			"core/site-title": {
 				"elements": {
 					"link": {
