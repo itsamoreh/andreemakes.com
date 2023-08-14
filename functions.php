@@ -55,13 +55,12 @@ function enqueue_style_sheet() {
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_style_sheet' );
 
 /**
- * Enqueue Simple Analytics scripts.
+ * Enqueue Simple Analytics auto events.
  */
-function enqueue_simple_analytics() {
-    wp_enqueue_script('simple-analytics', 'https://scripts.simpleanalyticscdn.com/latest.js', array(), '1.0', true);
-	wp_enqueue_script('simple-analytics-auto-events', 'https://scripts.simpleanalyticscdn.com/auto-events.js', array(), '1.0', true);
+function enqueue_simple_analytics_auto_events() {
+	wp_enqueue_script('simple-analytics-auto-events', 'https://sa.andreemakes.com/auto-events.js', array(), 'latest', array( 'strategy'  => 'async', 'in_footer' => true ));
 }
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_simple_analytics');
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_simple_analytics_auto_events');
 
 /**
  * Register block pattern categories.
