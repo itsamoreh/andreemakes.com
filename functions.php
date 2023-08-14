@@ -55,6 +55,15 @@ function enqueue_style_sheet() {
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_style_sheet' );
 
 /**
+ * Enqueue Simple Analytics scripts.
+ */
+function enqueue_simple_analytics() {
+    wp_enqueue_script('simple-analytics', 'https://scripts.simpleanalyticscdn.com/latest.js', array(), '1.0', true);
+	wp_enqueue_script('simple-analytics-auto-events', 'https://scripts.simpleanalyticscdn.com/auto-events.js', array(), '1.0', true);
+}
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_simple_analytics');
+
+/**
  * Register block pattern categories.
  */
 function register_block_pattern_categories() {
